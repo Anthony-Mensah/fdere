@@ -9,6 +9,11 @@ const cofounders = [
     position: "Founder & CEO",
   },
   {
+    image: "cofounders/collins.jpg",
+    name: "Korwuta Collins",
+    position: "Cofounder & Head of IT Consulting",
+  },
+  {
     image: "cofounders/edmund.jpg",
     name: "Edmund Okyere",
     position: "Cofounder & Cybersecurity Team Lead",
@@ -16,13 +21,9 @@ const cofounders = [
   {
     image: "cofounders/edwin.jpg",
     name: "Edwin Enchill",
-    position: "Cofounder & Software Engineer",
+    position: "Cofounder & Technical lead - Web operations and security.",
   },
-  {
-    image: "cofounders/collins.jpg",
-    name: "Korwuta Collins",
-    position: "Cofounder & Head of IT Consulting",
-  },
+
   {
     image: "cofounders/saint.jpg",
     name: "Anthony Mensah",
