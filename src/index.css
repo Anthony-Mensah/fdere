@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: oklch(0.22 0.05 293);
+  --color-accent: #EA206A;
+  --color-muted: oklch(0.65 0.02 308);
+  --font-parkinsans: "Parkinsans", "sans-serif";
+}
+
+/* body */
+@layer body {
+  body {
+    @apply bg-primary text-white font-parkinsans;
+  }
+}
+
+/* components */
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+}
+
+/* utilities */
+@layer utilities {
+  .hero-header {
+    @apply font-semibold leading-[100%] tracking-[0%]
+         text-[32px]      
+         sm:text-[48px]   
+         md:text-[64px]   
+         lg:text-[80px]  
+         xl:text-[96px]   
+         w-full          
+         md:w-[578px];
+  }
+
+  .header {
+    @apply font-semibold text-center md:text-left
+         text-[28px] 
+         sm:text-[32px] 
+         md:text-[40px] 
+         lg:text-[44px] 
+         xl:text-[48px] 
+         leading-[100%] 
+         tracking-[0%];
+  }
+
+  .nav-text {
+    @apply text-base md:text-[20px] text-muted cursor-pointer hover:text-accent duration-150 transition-colors;
+  }
+  .hero-points {
+    @apply font-medium leading-[100%] tracking-[0%] text-center md:text-left
+         text-[20px]      
+         sm:text-[24px]   
+         md:text-[28px]  
+         lg:text-[32px] 
+         xl:text-[36px]  
+         w-full          
+         md:w-[484px];
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
