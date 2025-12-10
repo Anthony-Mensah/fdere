@@ -3,7 +3,7 @@ const priorityPoints = [
   "AI Product Development & Engineering",
   "Cybersecurity, Privacy & Compliance",
   "IT Consulting & Systems Integration",
-  "Cybersecurity, Privacy & Compliance",
+  "Governance, Ethics & Policy",
   "Education, Training & Engagement",
 ];
 

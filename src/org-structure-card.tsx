@@ -59,6 +59,14 @@ const OrgStructureCard: React.FC<TOrgStructureCard> = ({
         >
           <h3 className="text-white text-lg font-semibold">{name}</h3>
           <p className="text-gray-300 text-sm">{position}</p>
+          {/* advisor info */}
+          {position.includes("Advisor") && (
+            <p>
+              AI and data specialist with 7+ years’ experience delivering
+              strategic analytics, data science solutions, and impactful AI
+              initiatives across sectors.
+            </p>
+          )}
 
           {/* Social Icons */}
           <div className="flex items-center justify-center gap-4 pt-2">
@@ -80,6 +88,5 @@ const OrgStructureCard: React.FC<TOrgStructureCard> = ({
     </motion.div>
   );
 };
-
 
 export default OrgStructureCard;

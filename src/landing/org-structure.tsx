@@ -4,34 +4,34 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const cofounders = [
   {
+    image: "cofounders/patrick.jpg",
+    name: "Som Patrick",
+    position: "Founder & CEO",
+  },
+  {
     image: "cofounders/edmund.jpg",
-    name: "Edmund",
-    position: "Co founder",
+    name: "Edmund Okyere",
+    position: "Cofounder & Cybersecurity Team Lead",
   },
   {
     image: "cofounders/edwin.jpg",
-    name: "Edwin",
-    position: "Co founder",
+    name: "Edwin Enchill",
+    position: "Cofounder & Software Engineer",
   },
   {
     image: "cofounders/collins.jpg",
     name: "Korwuta Collins",
-    position: "Co founder",
-  },
-  {
-    image: "cofounders/advisor.jpg",
-    name: "Derek Degbe",
-    position: "Advisor",
+    position: "Cofounder & Head of IT Consulting",
   },
   {
     image: "cofounders/saint.jpg",
     name: "Anthony Mensah",
-    position: "Product Lead",
+    position: "Cofounder & Lead Engineer",
   },
   {
-    image: "cofounders/patrick.jpg",
-    name: "Som Patrick",
-    position: "Founder",
+    image: "cofounders/advisor.jpg",
+    name: "Derek Degbe",
+    position: "Strategic and Techincal Advisor",
   },
 ];
 // type TOrgStructureCard = { image: string; name: string; position: string };
