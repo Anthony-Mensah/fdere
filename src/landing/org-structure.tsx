@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import OrgStructureCard from "../org-structure-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const cofounders = [
   {
@@ -21,9 +22,8 @@ const cofounders = [
   {
     image: "cofounders/edwin.jpg",
     name: "Edwin Enchill",
-    position: "Cofounder & Technical lead - Web operations and security.",
+    position: "Cofounder & Technical lead - Web operations and security.",
   },
-
   {
     image: "cofounders/saint.jpg",
     name: "Anthony Mensah",
@@ -35,8 +35,6 @@ const cofounders = [
     position: "Strategic and Techincal Advisor",
   },
 ];
-// type TOrgStructureCard = { image: string; name: string; position: string };
-// : React.FC<TOrgStructureCard>
 
 const OrgStructure = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -124,6 +122,31 @@ const OrgStructure = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Styled Subtext */}
+      <div className="relative max-w-4xl mx-auto px-6">
+        <div className="relative bg-linear-to-r from-gray-50 via-white to-gray-50 border-l-4 border-primary rounded-lg p-8 md:p-10 shadow-lg">
+          {/* Quote Icon - Top Left */}
+          <FaQuoteLeft className="absolute top-4 left-4 text-primary/20 text-4xl md:text-5xl" />
+
+          {/* Quote Icon - Bottom Right */}
+          <FaQuoteRight className="absolute bottom-4 right-4 text-primary/20 text-4xl md:text-5xl" />
+
+          {/* Text Content */}
+          <p className="text-center text-lg md:text-xl text-foreground font-medium leading-relaxed italic relative z-10 px-8 text-black">
+            We are innovators, engineers, and technologists shaping technology
+            that is fair, transparent, and accountable.
+          </p>
+
+          {/* Decorative Line */}
+          <div className="flex items-center justify-center mt-6">
+            <div className="h-1 w-16 bg-primary rounded-full"></div>
+          </div>
+        </div>
+
+        {/* Shadow Effect */}
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-primary/5 to-transparent blur-xl -z-10"></div>
       </div>
     </section>
   );
