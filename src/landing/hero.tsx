@@ -1,7 +1,7 @@
 const fderePoints = [
-  "Fdere was founded in 2024 to build powerful, fair, and accountable AI systems.",
-  "Our focus is to build fair, transparent, and accountable AI tech solutions.",
-  "Our purpose is to build fair, transparent, and accountable tech solutions.",
+  "Fdere was established in 2024 in response to rapid technological advancement and the need for systems that are not only powerful but fair, transparent, and accountable. Our founding vision is to create technologies that serve humanity and strengthen trust in digital ecosystems.",
+  "Building fair, transparent, and accountable systems that people and organizations can trust.",
+  "To influence how emerging technologies are built, governed, and trusted, shaping a future where technology enhances human decision-making, empowers organizations, and upholds ethical principles.",
 ];
 
 const Hero = () => {
